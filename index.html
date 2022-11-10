@@ -8,11 +8,14 @@
     <title>IT-life</title>
 
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;600;700&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -27,38 +30,78 @@
             <a class="header__link" href="">Contacts</a>
         </nav>
         <button class="header__button">Callback</button>
-        <hr>
     </header>
+
     <main class="hero">
-        <h1>who we are</h1>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        <h1 class="hero__h1">who we are</h1>
+        <hr class="hero__hr">
+        <p class="hero__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore
             magna aliqua.</p>
-        <div class="gallery">
-            <ul class="gallery__cards">
-                <li class="gallery__card">
-                    <img src="./assets/photo1.png" alt="photo" class="gallery__img">
-                    <span class="gallery__name">John Handson</span>
-                    <span class="gallery__occupation">Lead designer</span>
-                </li>
-                <li class="gallery__card">
-                    <img src="./assets/photo1.png" alt="photo" class="gallery__img">
-                    <span class="gallery__name">Alex Cutter</span>
-                    <span class="gallery__occupation">Developer</span>
-                </li>
-                <li class="gallery__card">
-                    <img src="./assets/photo2.png" alt="photo" class="gallery__img">
-                    <span class="gallery__name">Elena Simpson</span>
-                    <span class="gallery__occupation">Artist</span>
-                </li>
-                <li class="gallery__card">
-                    <img src="./assets/photo3.png" alt="photo" class="gallery__img">
-                    <span class="gallery__name">Lily Allen</span>
-                    <span class="gallery__occupation">Graphic Designer</span>
-                </li>
-            </ul>
+
+        <div class="flipcards">
+            <div class="flipcard">
+                <div class="flipcard-inner">
+                    <div class="flipcard-front">
+                        <img src="./assets/photo1.png" alt="photo">
+                    </div>
+                    <div class="flipcard-back">
+                        <a href="#" class="fa fa-blue fa-twitter"></a>
+                        <a href="#" class="fa fa-blue fa-facebook"></a>
+                        <a href="#" class="fa fa-blue fa-instagram"></a>
+                    </div>
+                </div>
+                <span class="flipcard__name">John Handson</span>
+                <span class="flipcard__occupation">Lead designer</span>
+            </div>
+
+            <div class="flipcard">
+                <div class="flipcard-inner">
+                    <div class="flipcard-front">
+                        <img src="./assets/photo1.png" alt="photo">
+                    </div>
+                    <div class="flipcard-back">
+                        <a href="#" class="fa fa-blue fa-twitter"></a>
+                        <a href="#" class="fa fa-blue fa-facebook"></a>
+                        <a href="#" class="fa fa-blue fa-instagram"></a>
+                    </div>
+                </div>
+                <span class="flipcard__name">Alex Cutter</span>
+                <span class="flipcard__occupation">Developer</span>
+            </div>
+
+            <div class="flipcard">
+                <div class="flipcard-inner">
+                    <div class="flipcard-front">
+                        <img src="./assets/photo2.png" alt="photo">
+                    </div>
+                    <div class="flipcard-back">
+                        <a href="#" class="fa fa-blue fa-twitter"></a>
+                        <a href="#" class="fa fa-blue fa-facebook"></a>
+                        <a href="#" class="fa fa-blue fa-instagram"></a>
+                    </div>
+                </div>
+                <span class="flipcard__name">Elena Simpson</span>
+                <span class="flipcard__occupation">Artist</span>
+            </div>
+
+            <div class="flipcard">
+                <div class="flipcard-inner">
+                    <div class="flipcard-front">
+                        <img src="./assets/photo3.png" alt="photo">
+                    </div>
+                    <div class="flipcard-back">
+                        <a href="#" class="fa fa-blue fa-twitter"></a>
+                        <a href="#" class="fa fa-blue fa-facebook"></a>
+                        <a href="#" class="fa fa-blue fa-instagram"></a>
+                    </div>
+                </div>
+                <span class="flipcard__name">Lily Allen</span>
+                <span class="flipcard__occupation">Graphic Designer</span>
+            </div>
         </div>
     </main>
+
     <footer class="footer">
         <div class="footer__logo">
             <img src="./assets/logo.png" alt="logo" width="170px" height="60px">
@@ -70,8 +113,13 @@
             <a class="footer__link" href="">Contacts</a>
         </nav>
         <div class="footer__social">
-            <button class="footer__social-icon"></button>
+            <a href="#" class="fa fa-white fa-twitter"></a>
+            <a href="#" class="fa fa-white fa-facebook"></a>
+            <a href="#" class="fa fa-white fa-instagram"></a>
+            <a href="#" class="fa fa-white fa-linkedin"></a>
+            <a href="#" class="fa fa-white fa-telegram"></a>
         </div>
+
     </footer>
 </body>
 

@@ -1,0 +1,212 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #18B5DC;
+}
+span {
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    color: #646464;
+}
+
+
+.header {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(188, 208, 229, 0.496913);
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.header__link {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #3C3C3C;
+    margin: 30px;
+}
+
+.header__button {
+    width: 130px;
+    height: 42px;
+    border: 1px solid #3C3C3C;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #3C3C3C;
+}
+
+.header__button:hover {
+    background-color: #18B5DC;
+    color: white;
+    border-color: #18B5DC;
+}
+
+/* HERO ELEMENTS */
+.hero {
+    background-color: #F6F6F6;
+}
+
+.hero__h1 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #3C3C3C;
+    margin-bottom: 20px;
+    padding-top: 150px;
+}
+
+.hero__hr {
+    margin: 0 auto;
+    background-color: rgba(188, 208, 229, 0.496913);
+    height: 4px;
+    border: none;
+    width: 45px;
+}
+
+.hero__p {
+    margin: 40px auto 60px auto;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #3C3C3C;
+    max-width: 570px;
+}
+
+/* FLIP-CARDS */
+.flipcards {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+.flipcard {
+    background-color: transparent;
+    width: 270px;
+    height: 270px;
+}
+
+/* This container is needed to position the front and back side */
+.flipcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flipcard:hover .flipcard-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flipcard-front,
+.flipcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flipcard-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flipcard-back {
+    background-color: #18B5DC;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.flipcard__name {
+    padding-top: 20px;
+    font-weight: 700;
+    color: #282528;
+}
+
+/* FOOTER */
+
+.footer__logo {
+    width: 170px;
+    height: 60px;
+    margin: 40px auto 28px auto;
+}
+
+.footer__menu {
+    text-align: center;
+}
+
+.footer__link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #3C3C3C;
+    padding: 30px;
+}
+
+.footer__social {
+    margin-top: 28px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* ICONS */
+.fa {
+    width: 42px;
+    height: 42px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.fa-white {
+    color: #18B5DC;
+    background-color: white;
+    border: 2px solid #18B5DC;
+}
+
+.fa-white:hover {
+    color: white;
+    background-color: #18B5DC;
+    border: 2px solid #18B5DC;
+}
+
+/* ICONS FLIP-CARDS */
+
+.fa-blue {
+    color: white;
+    background-color: #5DCBE6;
+}
+
+.fa-blue:hover {
+    color: #18B5DC;
+    background-color: white;
+}
